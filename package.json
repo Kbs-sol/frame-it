@@ -1,0 +1,29 @@
+{
+  "name": "frameit",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:client": "vite build --config vite.client.config.js",
+    "build:server": "vite build --config vite.config.js",
+    "build": "npm run build:client && npm run build:server",
+    "dev": "vite --config vite.client.config.js",
+    "dev:sandbox": "wrangler pages dev dist --d1=frameit-events --ip 0.0.0.0 --port 3000",
+    "preview": "wrangler pages dev dist",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name frameit",
+    "deploy:prod": "npm run build && wrangler pages deploy dist --project-name frameit"
+  },
+  "dependencies": {
+    "hono": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250705.0",
+    "@hono/vite-cloudflare-pages": "^0.4.2",
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^5.0.0",
+    "wrangler": "^3.78.0",
+    "typescript": "^5.0.0"
+  }
+}

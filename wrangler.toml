@@ -1,0 +1,12 @@
+name = "frameit"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "./dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "frameit-events"
+database_id = "b491194c-c80d-46cb-9402-0e99a3c73722"
+
+[vars]
+ENVIRONMENT = "production"
