@@ -6,7 +6,7 @@ pages_build_output_dir = "./dist"
 [[d1_databases]]
 binding = "DB"
 database_name = "frameit-events"
-database_id = "b491194c-c80d-46cb-9402-0e99a3c73722"
+database_id = "82d3da46-b885-451c-ae1e-855bcbf28dca"
 
 [vars]
 ENVIRONMENT = "production"
